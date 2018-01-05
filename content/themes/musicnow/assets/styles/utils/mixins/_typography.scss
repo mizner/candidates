@@ -1,0 +1,11 @@
+@mixin font-primary {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-secondary {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+@mixin font-accent {
+  font-family: 'Roboto Mono', sans-serif;
+}

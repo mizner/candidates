@@ -1,0 +1,9 @@
+.copyright {
+  background-color: $gray-light;
+  color: $off-white;
+  @include font-accent;
+  h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.top-bar {
+  background-color: $salmon;
+  color: $off-white;
+  a {
+    color: $off-white;
+  }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  form {
+    display: flex;
+    button {
+      background-color: $gray-dark;
+    }
+    p {
+      padding-right: 1em;
+    }
+  }
+}

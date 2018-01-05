@@ -4,6 +4,10 @@ namespace Pyxl\Theme;
 
 class Setup {
 
+	public function __construct() {
+		add_action( 'init', [ $this, 'init' ] );
+	}
+
 	/**
 	 * Initializer.
 	 */
@@ -45,16 +49,7 @@ class Setup {
 			]
 		);
 
-		add_theme_support( 'custom-header',
-			apply_filters( 'custom_header_args', [
-				'default-image' => '',
-				'width'         => 1400,
-				'height'        => 450,
-				'flex-height'   => true,
-			] )
-		);
-
-		add_theme_support( 'custom-logo' );
+		// add_theme_support( 'custom-logo' );
 
 	}
 

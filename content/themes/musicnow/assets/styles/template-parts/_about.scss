@@ -1,0 +1,12 @@
+.home-about {
+  background-color: $gray-dark;
+  color: $off-white;
+  article {
+    @include font-accent;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+  }
+  .home-about-image-wrapper {
+    text-align: center;
+  }
+}

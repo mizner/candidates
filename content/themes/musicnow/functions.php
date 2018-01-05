@@ -10,5 +10,8 @@ define( __NAMESPACE__ . '\URI', get_template_directory_uri() );
 
 add_action( 'after_setup_theme', function () {
 	new Setup();
+	new Logo();
 	new Social();
+	new MarkupHelper();
+	new Enqueues();
 } );

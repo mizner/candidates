@@ -19,4 +19,10 @@ require_once 'lib/autoload.php';
 
 add_action( 'plugins_loaded', function () {
 	new PostTypeSupport\ContentEditor();
+	new ACF\Page\Hero();
+	new ACF\Page\Events();
+	new ACF\Page\Donations();
+	new ACF\Page\About();
+	new GetMeta\EventRepeaterGrid();
+	new Shortcode\EventGrid();
 } );

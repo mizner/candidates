@@ -1,5 +1,15 @@
+$line-height: 2.25em;
+
 $salmon: rgb(251, 109, 90); // Bittersweet
 $gray-dark: rgb(45, 45, 45);
 $gray-light: rgb(99, 99, 99);
 $off-white: rgb(253, 253, 251);
 $beige: rgb(245, 243, 236);
+
+$color-primary: $salmon;
+
+$dark: #191919;
+$dark-clear: rgba(0, 0, 0, 0.60);
+$gray: #868686;
+
+$border: 1px solid $gray-light;

@@ -5,7 +5,7 @@
   "remote_site": "musicnow.wpengine.com",
   "remote_dir": "pyknrm",
   "remote_port": "2222",
-  "dev_site": "https://musicnow.local",
+  "dev_site": "http://musicnow.local",
   "dev_directory": "musicnow",
   "dev_host": "192.168.95.100",
   "dev_port": "4044",

@@ -8,7 +8,8 @@
       flex: 1 100%;
       padding-bottom: 25px;
       @include for-tablet-landscape-up {
-        flex: 1 33%;
+        flex: 1 auto;
+        max-width: 33%; // IE Fix
         padding-right: 25px;
         &:last-of-type {
           padding-right: 0;

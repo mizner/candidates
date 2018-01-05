@@ -1,0 +1,161 @@
+html {
+  font-size: 14px;
+  @include for-desktop-up {
+    font-size: 18px;
+  }
+}
+
+body {
+  @include font-primary;
+  background-color: white;
+  line-height: 1.75em;
+  color: $blue;
+  -webkit-font-smoothing: antialiased;
+}
+
+#wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: auto;
+}
+
+ul {
+  list-style-type: square;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $blue;
+  @include font-secondary;
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+  // text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.47);
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+small, .font_small {
+  font-size: 0.75em;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  &:visited {
+    color: $gray;
+  }
+  &:hover, &:focus {
+    color: $gray;
+  }
+}
+
+input, select {
+  line-height: $fields-height;
+  height: $fields-height;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea {
+  font-size: 1em;
+  border-radius: 2px;
+  background: white;
+  color: $gray;
+  //border: 1px solid $gray !important;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.42);
+  padding-left: 1em;
+}
+
+textarea {
+  padding-top: 1em;
+}
+
+.container {
+  @include bleed;
+}
+
+.dark {
+  @include dark;
+}
+
+.three-column-layout {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  @include bleed;
+  > * {
+    // flex: 1 100%;
+    width: 100%;
+    @include for-tablet-landscape-up {
+      //flex: 1;
+      &#content {
+        width: 60%;
+        order: 2;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+      &.sidebar {
+        width: 20%;
+      }
+      &.sidebar-primary {
+        order: 1;
+      }
+      &.sidebar-secondary {
+        order: 3;
+      }
+    }
+  }
+}
+
+svg {
+  max-width: 100%;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.hbt-swoosh {
+  width: 100%;
+  height: 0;
+  padding-top: 93px;
+  @include for-phone-only {
+    padding-top: 20px;
+  }
+  position: relative;
+  svg {
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+  }
+}
+
+.hbt-special-header {
+  @include special-header-styling;
+}

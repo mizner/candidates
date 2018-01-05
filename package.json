@@ -1,0 +1,40 @@
+{
+  "name": "gulp-press",
+  "version": "1.0.0",
+  "description": "Build Tools for WordPress via Gulp",
+  "author": "Mizner",
+  "license": "ISC",
+  "homepage": "https://gist.github.com/Mizner/4a1fb77e0660f1123241d5669af873ac",
+  "main": "index.php",
+  "scripts": {
+    "build": "gulp build --gulpfile ./gulp/gulp.js",
+    "start": "gulp watch --gulpfile ./gulp/gulp.js",
+    "sweep": "gulp sweep --gulpfile ./gulp/gulp.js",
+    "test": "node ./gulp/gulp.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify": "^0.2.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.2.0",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-webpack": "^1.5.0",
+    "node-sass": "^4.6.0",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^3.8.1"
+  }
+}

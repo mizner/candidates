@@ -1,0 +1,24 @@
+/* New */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+
+  word-wrap: normal !important;
+}
+
+/* No JS? */
+.no-js .some-element .screen-reader-text {
+  position: static;
+  -webkit-clip-path: none;
+  clip-path: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+}

@@ -9,9 +9,15 @@ $footer_logo = get_theme_mod( 'footer_logo' );
 			<section class="copyright">
 				<p><?php echo wp_kses_post( $copyright ); ?></p>
 			</section>
+			<?php
+			/*
+			// Client Requested this to be removed
+			?>
 			<section class="footer-logo">
 				<img src="<?php echo esc_url( $footer_logo ); ?>" alt="">
 			</section>
+			*/
+			?>
 		</div>
 	</footer>
 <?php

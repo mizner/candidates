@@ -5,8 +5,8 @@ $post_id          = get_the_ID();
 $hero_gallery_ids = get_post_meta( $post_id, 'hero_gallery', true );
 //_log( $hero_gallery );
 $slider_settings = [
-//	'autoPlay'        => '1000',
-//	'wrapAround'      => true,
+	'autoPlay'        => '1000',
+	'wrapAround'      => true,
 	'prevNextButtons' => false,
 //	'imagesLoaded'    => true,
 //	'freeScroll'      => true,

@@ -1,11 +1,13 @@
 .donations {
   background-color: $beige;
+  padding-top: 0;
   h3 {
     margin-top: 0;
-    @include font-primary;
+    margin-bottom: 25px;
+    @include font-accent;
     text-transform: uppercase;
     color: $salmon;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
   }
   article {

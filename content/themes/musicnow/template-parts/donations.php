@@ -7,9 +7,7 @@ $content = get_post_meta( $post_id, $prefix . 'content', true );
 
 <section class="donations module">
 	<div class="container">
-		<h3>
-			<?php esc_html_e( $title ); ?>
-		</h3>
+		<h3><?php esc_html_e( $title ); ?></h3>
 		<article>
 			<?php echo wp_kses_post( $content ); ?>
 		</article>

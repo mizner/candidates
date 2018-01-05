@@ -7,7 +7,8 @@ html {
 
 body {
   @include font-primary;
-  background-color: white;
+  background-color: $beige;
+  color: $gray-light;
   line-height: 1.75em;
   -webkit-font-smoothing: antialiased;
 }
@@ -89,6 +90,7 @@ input, textarea {
   //border-radius: 2px;
   background-color: white;
   color: $dark;
+  padding: 5px 10px;
   //border: 1px solid $gray !important;
   // box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.42);
   //padding-left: 1em;

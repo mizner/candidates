@@ -1,6 +1,66 @@
 .hero {
   background-color: $gray-dark;
   color: $off-white;
-  padding-bottom: 50px;
   padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.carousel-cell {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+
+  line-height: 200px;
+  height: 200px;
+  @include for-tablet-portrait-up {
+    line-height: 350px;
+    height: 350px;
+  }
+  @include for-desktop-up {
+    line-height: 500px;
+    height: 500px;
+  }
+
+  img {
+    min-height: 100%;
+  }
+
+}
+
+/* Fade CSS */
+
+.flickity-slider {
+  transform: none !important;
+}
+
+.carousel-cell {
+  left: 0 !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.carousel-cell.is-selected {
+  opacity: 1;
+  z-index: 0
+}
+
+.carousel {
+  .flickity-page-dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .dot {
+      border-radius: 0;
+      margin: 0;
+      background: $beige;
+      opacity: 1;
+      flex: 1 auto;
+      max-width: 49.5%;
+    }
+    .dot.is-selected {
+      background: $salmon;
+    }
+  }
 }

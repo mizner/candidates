@@ -13,6 +13,7 @@ class Enqueues {
 	public function init() {
 
 		add_action( 'wp_enqueue_scripts', [ $this, 'load_cdn_jquery' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'non_site_wide' ], 10 );
 		add_action( 'wp_enqueue_scripts', [ $this, 'site_wide' ], 10 );
 		add_action( 'get_footer', [ $this, 'site_wide_footer' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'admin_enqueue' ] );
@@ -48,7 +49,8 @@ class Enqueues {
 	public function non_site_wide() {
 
 		// Scripts
-		wp_register_script( 'flickity', self::$dist . '/js/flickity.min.js', null, '2.0.5', true );
+		wp_register_script( 'flickity', URI . '/js/slider.min.js', null, '2.0.5', true );
+		wp_register_style( 'flickity', URI . '/css/slider.min.css' );
 	}
 
 	public function load_cdn_jquery() {

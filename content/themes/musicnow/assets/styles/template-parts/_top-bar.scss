@@ -1,6 +1,8 @@
 .top-bar {
   background-color: $salmon;
   color: $off-white;
+  padding-top: 5px;
+  padding-bottom: 5px;
   a {
     color: $off-white;
   }
@@ -9,6 +11,12 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    > * {
+      flex: 1 100%;
+      @include for-tablet-portrait-up {
+        flex: 1 50%;
+      }
+    }
   }
 
   p {
@@ -18,6 +26,14 @@
 
   form {
     display: flex;
+    justify-content: flex-end;
+    @include for-phone-only {
+      flex-flow: row wrap;
+      > * {
+        flex: 1 100%;
+      }
+    }
+
     button {
       background-color: $gray-dark;
     }

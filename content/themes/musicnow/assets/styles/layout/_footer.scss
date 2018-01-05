@@ -1,9 +1,14 @@
-.copyright {
+.site-footer {
   background-color: $gray-light;
   color: $off-white;
   @include font-accent;
   h3, p {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
   }
 }

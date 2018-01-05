@@ -1,0 +1,10 @@
+.home-intro {
+  background-color: $beige;
+  article {
+    @include font-accent;
+    padding: 25px 50px;
+    background-color: $off-white;
+    text-transform: uppercase;
+  }
+  padding-bottom: 0;
+}

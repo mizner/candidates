@@ -20,13 +20,35 @@ class Hero {
 			'key'                   => 'group_hero',
 			'title'                 => 'Hero / Banner',
 			'fields'                => [
+				// [
+				// 	'key'          => 'field_hero_gallery',
+				// 	'label'        => 'Slider Images',
+				// 	'name'         => 'hero_gallery',
+				// 	'type'         => 'gallery',
+				// 	'instructions' => '',
+				// ],
 				[
-					'key'          => 'field_hero_gallery',
-					'label'        => 'Slider Images',
-					'name'         => 'hero_gallery',
-					'type'         => 'gallery',
-					'instructions' => '',
-				],
+					'key'          => 'hero_slider',
+					'name'         => 'hero_slider',
+					'label'        => 'Slides',
+					'type'         => 'repeater',
+					'layout'       => 'row',
+					'button_label' => 'Add Slide',
+					'sub_fields'   => [
+						[
+							'key'   => 'image',
+							'name'  => 'image',
+							'label' => 'Image',
+							'type'  => 'image',
+						],
+						[
+							'key'   => 'link',
+							'name'  => 'link',
+							'label' => 'Link',
+							'type'  => 'link',
+						]
+					]
+				]
 			],
 			'location'              => [
 				[

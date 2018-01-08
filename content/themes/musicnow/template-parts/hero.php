@@ -1,36 +1,43 @@
 <?php
 wp_enqueue_script( 'flickity' );
 wp_enqueue_style( 'flickity' );
-$post_id          = get_the_ID();
-$hero_gallery_ids = get_post_meta( $post_id, 'hero_gallery', true );
-//_log( $hero_gallery );
-$slider_settings = [
-	'autoPlay'        => '1000',
-	'wrapAround'      => true,
-	'prevNextButtons' => false,
+if ( function_exists( 'get_field' ) ) {
+	$slider          = get_field( 'hero_slider' );
+	$slider_settings = [
+		'autoPlay'        => '1000',
+		'wrapAround'      => true,
+		'prevNextButtons' => false,
 //	'imagesLoaded'    => true,
 //	'freeScroll'      => true,
 //	'contain'         => true,
-];
-?>
+	];
+	?>
 
-<section class="hero">
-	<div class="container">
-		<div class="hero-slider">
-			<div class="carousel js-flickity"
-			     data-flickity='<?php esc_attr_e( json_encode( $slider_settings ) ); ?>'>
-				<?php foreach ( $hero_gallery_ids as $gallery_id ) {
-					$image     = wp_get_attachment_image_url( $gallery_id, 'full' );
-					$image_url = ( $image == null ? 'https://placehold.it/1920x700' : $image ); // If there's no image, use placeholder image
-					$image_alt = ( $image == null ? 'Placeholder' : $image ); // and placeholder text
-					?>
-					<div class="carousel-cell">
-						<img src="<?php echo esc_url( $image_url ); ?>" alt="">
-					</div>
+	<section class="hero">
+		<div class="container">
+			<div class="hero-slider">
+				<div class="carousel js-flickity"
+				     data-flickity='<?php echo esc_attr( json_encode( $slider_settings ) ); ?>'>
 					<?php
-				}
-				?>
+					foreach ( $slider as $slide ) {
+						// If there's no image, use placeholder image
+						$image_url = ( ! isset( $slide['image']['url'] ) ? 'https://placehold.it/1920x700' : $slide['image']['url'] );
+						// and placeholder text
+						$image_alt = ( ! isset( $slide['image']['url'] ) == null ? 'Image' : $image );
+						?>
+						<div class="carousel-cell">
+							<a href="<?php echo esc_url( $slide['link']['url'] ) ?>">
+								<img src="<?php echo esc_url( $image_url ); ?>"
+								     alt="<?php echo esc_attr( $image_alt ) ?>">
+							</a>
+
+						</div>
+						<?php
+					}
+					?>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+	<?php
+} // End if().

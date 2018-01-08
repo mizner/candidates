@@ -3,7 +3,7 @@
   "staging_site": "musicnow.wpengine.com",
   "staging_username": "mizner",
   "staging_password": "XXXXXXX",
-  "local_uri": "https://musicnow.local",
+  "local_uri": "https://musicnow.test",
   "local_directory": "musicnow",
   "local_host": "192.168.95.100",
   "local_port": "4018",

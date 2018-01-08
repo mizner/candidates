@@ -13,8 +13,15 @@
     align-items: center;
     > * {
       flex: 1 100%;
-      @include for-tablet-portrait-up {
-        flex: 1 50%;
+      &.social-media-mobile {
+        @include for-tablet-portrait-up {
+          flex: 1;
+        }
+      }
+      &.signup-form {
+        @include for-tablet-portrait-up {
+          flex: 2;
+        }
       }
     }
   }
@@ -24,18 +31,53 @@
     margin-bottom: 0;
   }
 
-  form {
-    display: flex;
-    justify-content: flex-end;
-    @include for-phone-only {
+  .signup-form {
+    @include for-tablet-portrait-up {
+      min-width: 336px;
+    }
+  }
+
+  #mc_embed_signup_scroll {
+    width: 100%;
+    @include for-tablet-portrait-up {
+      display: flex;
       flex-flow: row wrap;
+      justify-content: flex-end;
       > * {
-        flex: 1 100%;
+        flex: 1;
       }
     }
+  }
 
+  form {
+    .form_primary {
+      @include for-tablet-portrait-up {
+        text-align: right;
+        padding-right: 1em;
+      }
+    }
+    .form_secondary {
+      @include for-tablet-portrait-up {
+        max-height: 30px;
+        display: flex;
+        justify-content: flex-end;
+        > * {
+
+        }
+      }
+    }
+    .button,
     button {
       background-color: $gray-dark;
+      color: $off-white;
+      @include for-phone-only {
+        width: 100%;
+      }
+    }
+    [type="email"] {
+      @include for-phone-only {
+        width: 100%;
+      }
     }
     p {
       padding-right: 1em;

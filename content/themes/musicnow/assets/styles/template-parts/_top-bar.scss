@@ -58,6 +58,7 @@
     }
     .form_secondary {
       @include for-tablet-portrait-up {
+        max-width: 310px;
         max-height: 30px;
         display: flex;
         justify-content: flex-end;

@@ -11,22 +11,6 @@
     color: #fff;
     text-align: center;
     font-size: 2rem;
-
-    line-height: 200px;
-    height: 200px;
-    @include for-tablet-portrait-up {
-      line-height: 350px;
-      height: 350px;
-    }
-    @include for-desktop-up {
-      line-height: 500px;
-      height: 500px;
-    }
-
-    img {
-      min-height: 100%;
-    }
-
   }
 
   /* Fade CSS */

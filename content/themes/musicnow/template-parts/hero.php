@@ -20,7 +20,6 @@ if ( function_exists( 'get_field' ) ) {
 				     data-flickity='<?php echo esc_attr( json_encode( $slider_settings ) ); ?>'>
 					<?php
 					foreach ( $slider as $slide ) {
-						_log( $slide );
 						// If there's no image, use placeholder image
 						$image_url = ( ! isset( $slide['image']['url'] ) ? 'https://placehold.it/1920x700' : $slide['image']['url'] );
 						// and placeholder text

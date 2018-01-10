@@ -9,7 +9,7 @@
 			  novalidate>
 			<div id="mc_embed_signup_scroll">
 				<div class="form_primary">
-					<label for="mce-EMAIL">Join to our mailing list</label>
+					<label for="mce-EMAIL">Join our newsletter list</label>
 				</div>
 				<div class="form_secondary">
 					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"

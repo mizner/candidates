@@ -37,7 +37,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "XXX"
+          "url": "https://mizner-bucket.s3.amazonaws.com/public/wp-plugins/acf/acf-5.6.10.zip"
         }
       }
     }

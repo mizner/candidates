@@ -1,0 +1,51 @@
+## Misc
+.DS_Store
+.idea
+.env
+debug.log
+local-phpinfo.php
+
+## NPM
+node_modules
+
+## Docker Stuff
+.data
+.opt
+opt
+
+## WordPress Stuff
+/wp-content/uploads/*
+/wp-content/plugins/*
+/wp-content/themes/*
+
+!/wp-content/themes/candidate
+
+!/wp-content/plugins/_candidate-core
+!/wp-content/plugins/advanced-custom-fields-pro
+!/wp-content/plugins/imsanity
+!/wp-content/plugins/regenerate-thumbnails
+!/wp-content/plugins/wordpress-seo
+
+
+/core
+/wp-config.php
+/wp-activate.php
+/wp-cron.php
+/wp-config-sample.php
+/wp-comments-post.php
+/index.php
+/wp-load.php
+/wp-links-opml.php
+/wp-login.php
+/license.txt
+/wp-settings.php
+/wp-blog-header.php
+/wp-mail.php
+/xmlrpc.php
+/wp-signup.php
+/wp-trackback.php
+/readme.html
+/wp-includes
+/wp-admin
+/wp-content/debug.log
+/wp-content/mu-plugins/

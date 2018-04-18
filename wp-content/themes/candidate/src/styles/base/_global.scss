@@ -1,0 +1,132 @@
+// global
+body {
+  margin: 0;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: $brand__gray;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: .8em;
+}
+
+p {
+  line-height: 1.75em;
+}
+
+a {
+  color: $brand__blue;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    color: $brand__blue;
+    &:after {
+      color: inherit;
+    }
+  }
+}
+
+blockquote {
+
+}
+
+ul {
+
+}
+
+ol {
+
+}
+
+hr {
+
+}
+
+img {
+  max-width: 100%;
+}
+
+input:not([type="submit"]) {
+  border: 0;
+  font-size: 1em;
+  padding: .5em 1em;
+  display: block;
+  border-radius: 3px;
+}
+
+textarea {
+  padding: .85em .25em;
+}
+
+figure {
+  margin: 0;
+}
+
+
+#wrapper {
+  position: relative;
+}
+
+.container {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px; // Static value intentional
+  padding-right: 15px; // Static value intentional
+}
+
+.svg {
+  height: auto;
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.background-image {
+  position: absolute;
+  opacity: .8;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.template-part {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

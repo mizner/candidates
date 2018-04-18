@@ -1,0 +1,25 @@
+.newsletter {
+  h2 {
+  }
+}
+
+.mailchimp-form {
+  $self: &;
+  #{$self}__primary {
+    display: flex;
+    input[type="email"] {
+      width: 75%;
+      margin: 0;
+      border: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    button {
+      width: 25%;
+      margin-right: 0;
+      margin-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

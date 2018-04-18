@@ -17,6 +17,7 @@ class FrontPage
     ];
 
     private $hide = [
+        0 => 'the_content'
     ];
 
     public static function init()
@@ -55,9 +56,15 @@ class FrontPage
     {
         return [
             [
-                'label'        => 'About',
-                'key'          => 'about',
-                'name'         => 'about',
+                'label'        => 'Title',
+                'key'          => 'about_title',
+                'name'         => 'about_title',
+                'type'         => 'text',
+            ],
+            [
+                'label'        => 'Description',
+                'key'          => 'about_description',
+                'name'         => 'about_description',
                 'type'         => 'wysiwyg',
                 'toolbar'      => 'basic',
                 'media_upload' => 0,

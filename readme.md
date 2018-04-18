@@ -1,6 +1,9 @@
 (Instructions are a work-in-progress)
 
-* `composer install` (install plugins)
+* `cd` into the site folder e.g `cd ~/Local/app/`
+* Nuke `public` folder `rm -rf public` (be careful with this command, you can also just delete with finder)
+* `git clone https://github.com/mizner/candidates public`
+* `composer install` (installs plugins)
 * `cd wp-content/themes/candidate`
 * `yarn install` (`npm install` works too)
 * `yarn build` (does `gulp build` for you)

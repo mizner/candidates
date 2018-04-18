@@ -5,10 +5,10 @@
 * `git clone https://github.com/mizner/candidates public`
 * Make sure you have a `wp-config.php` (with the following... or something like it)
 ```php
-define('WP_SITEURL', "http://candidates.text/core");
-define('WP_HOME', "http://candidates.text");
+define('WP_SITEURL', "http://candidates.test/core");
+define('WP_HOME', "http://candidates.test");
 define('WP_CONTENT_DIR', dirname(__FILE__).'/wp-content');
-define('WP_CONTENT_URL', dirname(__FILE__)."http://candidates.text/wp-content"); 
+define('WP_CONTENT_URL', dirname(__FILE__)."http://candidates.test/wp-content"); 
 ```
 * `index.php` (with `require dirname(__FILE__) . '/core/wp-blog-header.php';`)
 * `composer install` (installs plugins)

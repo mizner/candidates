@@ -11,7 +11,7 @@ do_action('sl_before_footer');
                 )); ?>
             </p>
             <p>P.O. Box 7130, Maryville TN 37802</p>
-            <p>Paid for by Susan Sneed for TN State District</p>
+            <p class="footer_paid">Paid for by Susan Sneed for TN State District</p>
             <p>Lisa Thomas, Treasurer</p>
             <?php // get_template_part('template-parts/newsletter'); ?>
         </div>

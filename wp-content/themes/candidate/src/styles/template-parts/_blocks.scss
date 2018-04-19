@@ -8,7 +8,9 @@ section.content_block_bottom.template-part {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
+    @include for-desktop-only {
+      height: 500px;
+    }
 
     .block_image, .block_content {
       flex: 1 100%;
@@ -21,10 +23,16 @@ section.content_block_bottom.template-part {
     }
 
     .block_image {
+      @include for-tablet-portait-only {
+        text-align: center;
+      }
 
       img {
         object-fit: cover;
-        height: 100%;
+        //@include for-tablet-landscape-up {
+          height: 100%;
+          width: 100%;
+        //}
       }
 
     }
@@ -32,9 +40,19 @@ section.content_block_bottom.template-part {
     .block_content {
       color: white;
 
+
       .block_content_inner {
         padding: 50px;
         text-align: center;
+      }
+
+      .block_content_inner {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        @include for-desktop-only {
+          min-height: 400px;
+        }
       }
 
       h2 {
@@ -81,10 +99,10 @@ section.content_block_bottom.template-part {
     }
 
     .block_content_inner {
-      min-height: 400px;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
+      //min-height: 400px;
+      //display: flex;
+      //flex-flow: column wrap;
+      //justify-content: center;
     }
 
   }

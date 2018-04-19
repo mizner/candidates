@@ -1,7 +1,7 @@
 <?php
 $post_id     = get_the_ID();
-$title       = get_post_meta($post_id, 'title', true) ?: 'Why I\'m Running';
-$description = get_post_meta($post_id, 'site_globals_about', true);
+$title       = get_post_meta($post_id, 'about_title', true) ?: 'Why I\'m Running';
+$description = get_post_meta($post_id, 'about_description', true);
 ?>
 <section class="home-about">
     <div class="container">

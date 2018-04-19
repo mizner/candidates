@@ -13,7 +13,6 @@ get_template_part('template-parts/page-header');
                     <div class="about__inner">
                         <img src="/wp-content/uploads/2018/04/jamie-hero2.jpg">
                         <img src="/wp-content/uploads/2018/04/jamie-block1.jpg">
-                        <img src="/wp-content/uploads/2018/04/jamie-block2.jpg">
                     </div>
                 </div>
                 <div class="about_right">

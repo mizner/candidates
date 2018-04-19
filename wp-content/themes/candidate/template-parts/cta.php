@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="site_cta">
+<section class="site_cta template-part">
 	<div class="container">
 		<div class="cta__inner">
 			<h3 class="cta_head">Stand With Candidate</h3>

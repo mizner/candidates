@@ -28,4 +28,9 @@ get_template_part('template-parts/hero');
         </div>
     </section>
 <?php
+
+get_template_part('template-parts/block-top');
+
+get_template_part('template-parts/block-bottom');
+
 get_footer();

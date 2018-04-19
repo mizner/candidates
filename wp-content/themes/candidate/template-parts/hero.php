@@ -1,11 +1,12 @@
 <?php
 
-use Mizner\CandidateCore\Mailchimp\Forms\EmailOnly;
+use HG\CandidateCore\Mailchimp\Forms\EmailOnly;
 use Mizner\Candidate\SVG;
-
+$post_id = get_the_ID();
 $background_image = '//i.imgur.com/a1wepVI.jpg';
 $background_image = 'https://media.gannett-cdn.com/nashville/35553607001/201701/3591/35553607001_5291901418001_5291895049001-vs.jpg';
-$background_image = '/wp-content/uploads/2018/04/Susan-Sneed-8-1.jpg';
+$background_image_id = get_post_meta($post_id,'hero_image',true);
+$background_image = wp_get_attachment_image_url($background_image_id, 'full');
 ?>
 <section class="hero template-part">
     <div class="background-image" style="background-image: url('<?php echo esc_url($background_image); ?>')"></div>

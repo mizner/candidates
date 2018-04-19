@@ -9,7 +9,7 @@ if ($form_name) :
     <section class="act-blue component donation">
         <div class="container">
             <div class="donation__primary">
-                <h3><?php echo esc_html__($title); ?></h3>
+                <h3><?php echo ($title); ?></h3>
             </div>
             <div class="donation__secondary">
                 <?php foreach ($amounts as $amount) : ?>

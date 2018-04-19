@@ -4,44 +4,28 @@
  */
 
 get_header();
-get_template_part('template-parts/hero');
 ?>
-    <section class="donation">
+    <section class="about main_about">
         <div class="container">
-
-        </div>
-    </section>
-    <section class="about">
-        <?php
-        $content = get_option('site_globals_about');
-        ?>
-        <div class="container">
-            <div class="about__inner">
-                <div class="donation">
-                    <div class="donation__primary">
-                        <h3><strong>Support</strong> Our Campaign</h3>
-                    </div>
-                    <div class="donation__secondary">
-                        <button class="button button__secondary">
-                            <span>$5</span>
-                        </button>
-                        <button class="button button__secondary">
-                            <span>$15</span>
-                        </button>
-                        <button class="button button__secondary">
-                            <span>$25</span>
-                        </button>
-                        <button class="button button__secondary">
-                            <span>$50</span>
-                        </button>
+            <div class="content__inner">
+                <h1>Meet Candidate</h1>
+                <div class="about_left">
+                    <div class="about__inner">
+                        <img src="/wp-content/uploads/2018/04/jamie-hero2.jpg">
+                        <img src="/wp-content/uploads/2018/04/jamie-block1.jpg">
+                        <img src="/wp-content/uploads/2018/04/jamie-block2.jpg">
                     </div>
                 </div>
-                <article>
-                    <h3>Why I'm Running</h3>
-                    <?php echo apply_filters('the_content', $content); ?>
-                </article>
+                <div class="about_right">
+                    <div class="about__inner">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque in velit sodales ullamcorper. Curabitur consequat quis magna nec iaculis. Donec imperdiet, ipsum non pulvinar egestas, quam ligula molestie est, non ultricies mauris diam non lorem. Quisque a velit dignissim, blandit quam tincidunt, mattis dolor. Sed sit amet sem nec libero fringilla ultrices. Nulla convallis ultrices pretium. Nullam posuere elit eu sapien vestibulum mattis. Mauris laoreet volutpat maximus. Cras eget vulputate lorem. In tempor fermentum lorem, non rhoncus purus congue pharetra. Suspendisse fringilla et tortor ac rhoncus. Etiam tincidunt ultrices nisl in posuere. Nullam ultricies enim ac cursus mollis. Aliquam sagittis neque fermentum est interdum, nec suscipit sapien maximus.
+
+                            Duis sit amet molestie dui. In vitae tellus ac orci pretium interdum id id lectus. Nunc mollis libero quis enim luctus, quis iaculis erat scelerisque. Integer dignissim ligula eu efficitur sodales. Aenean sollicitudin massa id tellus tincidunt, a varius nunc cursus. Donec non tincidunt libero. Donec faucibus, est non facilisis sagittis, eros urna maximus massa, ut euismod augue quam et velit.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 <?php
+get_template_part('template-parts/cta');
 get_footer();

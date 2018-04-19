@@ -56,6 +56,12 @@ class FrontPage
     {
         return [
             [
+                'label'        => 'Hero Image',
+                'key'          => 'hero_image',
+                'name'         => 'hero_image',
+                'type'         => 'image',
+            ],
+            [
                 'label'        => 'Title',
                 'key'          => 'about_title',
                 'name'         => 'about_title',

@@ -2,14 +2,16 @@
 
 use HG\CandidateCore\Mailchimp\Forms\EmailOnly;
 use Mizner\Candidate\SVG;
-$post_id = get_the_ID();
-$background_image = '//i.imgur.com/a1wepVI.jpg';
-$background_image = 'https://media.gannett-cdn.com/nashville/35553607001/201701/3591/35553607001_5291901418001_5291895049001-vs.jpg';
-$background_image_id = get_post_meta($post_id,'hero_image',true);
-$background_image = wp_get_attachment_image_url($background_image_id, 'full');
+
+$post_id                   = get_the_ID();
+$background_image_fallback = 'https://via.placeholder.com/1920x700/CC0000/ffffff';
+$background_image_id       = get_post_meta($post_id, 'hero_image', true);
+$background_image          = $background_image_id ?
+    wp_get_attachment_image_url($background_image_id, 'full') :
+    $background_image_fallback;
 ?>
 <section class="hero template-part">
-    <div class="background-image" style="background-image: url('<?php echo esc_url($background_image); ?>')"></div>
+    <div class="background-image" style="background-image: url('<?php echo esc_url($background_image); ?>'); background-size: cover; background-position: center"></div>
     <div class="container">
 
         <div class="hero__cta">

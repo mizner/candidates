@@ -1,0 +1,28 @@
+section.page_header.template-part {
+  padding-bottom: 0;
+  .page_header__inner {
+    text-align: center;
+  }
+}
+
+section.about.main_about.template-part {
+
+  .about_left, .about_right {
+    display: inline-flex;
+    max-width: 50%;
+    flex: 1 50%;
+  }
+
+  .content__inner {
+    display: inline-flex;
+  }
+
+  .about_left {
+
+    img {
+      max-width: 450px;
+    }
+
+  }
+
+}

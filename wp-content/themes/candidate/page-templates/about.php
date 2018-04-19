@@ -4,11 +4,11 @@
  */
 
 get_header();
+get_template_part('template-parts/page-header');
 ?>
-    <section class="about main_about">
+    <section class="about main_about template-part">
         <div class="container">
             <div class="content__inner">
-                <h1>Meet Candidate</h1>
                 <div class="about_left">
                     <div class="about__inner">
                         <img src="/wp-content/uploads/2018/04/jamie-hero2.jpg">

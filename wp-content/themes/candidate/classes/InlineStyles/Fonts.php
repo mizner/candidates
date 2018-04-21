@@ -1,6 +1,6 @@
 <?php
 
-namespace Mizner\Candidate\InlineStyles;
+namespace HG\Candidate\InlineStyles;
 
 class Fonts
 {

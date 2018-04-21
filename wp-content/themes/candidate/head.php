@@ -1,7 +1,7 @@
 <?php
 
-use Mizner\CandidateCore\InlineScripts;
-use Mizner\Candidate\InlineStyles;
+use HG\CandidateCore\InlineScripts;
+use HG\Candidate\InlineStyles;
 
 ?>
 <!doctype html>

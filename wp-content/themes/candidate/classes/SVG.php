@@ -1,8 +1,8 @@
 <?php
 
-namespace Mizner\Candidate;
+namespace HG\Candidate;
 
-use const Mizner\Candidate\PATH;
+use const HG\Candidate\PATH;
 
 /**
  * Class SVG

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mizner\Candidate;
+namespace HG\Candidate;
 
 spl_autoload_register(function ($class) {
 

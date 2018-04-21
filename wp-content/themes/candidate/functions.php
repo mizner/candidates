@@ -1,6 +1,6 @@
 <?php
 
-namespace Mizner\Candidate;
+namespace HG\Candidate;
 
 define(__NAMESPACE__.'\PATH', dirname(__FILE__).'/');
 define(__NAMESPACE__.'\URI', trailingslashit(get_template_directory_uri()));

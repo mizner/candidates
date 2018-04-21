@@ -1,7 +1,7 @@
 <?php
 
 use HG\CandidateCore\Mailchimp\Forms\EmailOnly;
-use Mizner\Candidate\SVG;
+use HG\Candidate\SVG;
 
 $post_id                   = get_the_ID();
 $background_image_fallback = 'https://via.placeholder.com/1920x700/CC0000/ffffff';

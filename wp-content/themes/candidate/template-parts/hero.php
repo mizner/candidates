@@ -1,7 +1,6 @@
 <?php
 
 use HG\CandidateCore\Mailchimp\Forms\EmailOnly;
-use HG\Candidate\SVG;
 use HG\CandidateCore\TemplateData\Hero;
 use HG\CandidateCore\Utils\Esc;
 
@@ -25,14 +24,7 @@ $data = new Hero();
                 };
                 ?>
                 <div class="hero__icons">
-                    <?php
-                    if (class_exists(SVG::class)) :
-                        echo SVG::get('brands/facebook');
-                        echo SVG::get('brands/twitter');
-                        echo SVG::get('brands/youtube');
-                        echo SVG::get('brands/instagram');
-                    endif;
-                    ?>
+                    <?php get_template_part('template-parts/social-media'); ?>
                 </div>
             </div>
         </div>

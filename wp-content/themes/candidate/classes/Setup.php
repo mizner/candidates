@@ -36,8 +36,6 @@ class Setup
     {
         register_nav_menus([
             'menu_primary' => __('Primary Menu', 'candidate-theme'),
-            'menu_footer'  => __('Footer Menu', 'candidate-theme'),
-            'menu_social'  => __('Social Menu', 'candidate-theme'),
         ]);
     }
 

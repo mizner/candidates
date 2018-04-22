@@ -1,0 +1,10 @@
+.cta-global {
+  $base: &;
+  color: white;
+  text-align: center;
+  #{$base}__buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

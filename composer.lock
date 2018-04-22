@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "db505861993e032b20adc01bb917991e",
+    "content-hash": "c67410f53337d31d1a86979188d3f9f3",
     "packages": [
         {
             "name": "composer/installers",
@@ -150,6 +150,26 @@
                 "shasum": null
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "wpackagist-plugin/acf-content-analysis-for-yoast-seo",
+            "version": "2.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-content-analysis-for-yoast-seo/",
+                "reference": "tags/2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-content-analysis-for-yoast-seo.2.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",

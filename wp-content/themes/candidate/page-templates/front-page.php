@@ -6,8 +6,8 @@
 get_header();
 
 get_template_part('template-parts/hero');
-get_template_part('template-parts/about');
-get_template_part('template-parts/block-top');
-get_template_part('template-parts/block-bottom');
+get_template_part('template-parts/intro');
+get_template_part('template-parts/feature-top');
+get_template_part('template-parts/feature-bottom');
 
 get_footer();

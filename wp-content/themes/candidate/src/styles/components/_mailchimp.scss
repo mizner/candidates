@@ -1,0 +1,80 @@
+.mc-form {
+  $self: &;
+
+  @include flexbox-base;
+
+  #{$self}__primary {
+
+    @include for-tablet-portrait-up {
+      @include flexbox-width(75%)
+    }
+
+    input[type="email"] {
+      display: block;
+      margin: 0;
+      width: 100%;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      @include for-tablet-portrait-up {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: $input__border-radius;
+      }
+    }
+  }
+
+  #{$self}__footer {
+    @include for-tablet-portrait-up {
+      @include flexbox-width(25%)
+    }
+
+    button {
+      width: 100%;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      @include for-tablet-portrait-up {
+        border-top-right-radius: $input__border-radius;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
+
+.mailchimp-form {
+  $base: &;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+  #{$base}__inner {
+    background-color: white;
+    max-width: 500px;
+    padding: 2em;
+    @include for-phone-only {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    margin: auto;
+  }
+
+  h1, h2, h3, h4, h5 {
+    margin-top: 0;
+  }
+  .indicates-required {
+    font-size: .5em;
+    margin-bottom: 1em;
+  }
+  .mc-field-group {
+    margin-bottom: 15px;
+  }
+  label {
+    font-size: .7em;
+  }
+  input[type="text"],
+  input[type="name"],
+  input[type="email"] {
+    display: block;
+    border-color: #f3f3f3;
+  }
+}

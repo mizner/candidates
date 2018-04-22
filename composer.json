@@ -48,7 +48,8 @@
     "php": "^7.0",
     "wpackagist-plugin/wordpress-seo": "^7.0",
     "mizner/advanced-custom-fields-pro": "*",
-    "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8"
+    "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8",
+    "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "^2.0"
   },
   "scripts": {
     "post-install-cmd": [

@@ -6,16 +6,16 @@
   margin: auto;
   transition: 400ms ease all;
   border-radius: 3px;
-  line-height: 1em;
-  padding: .5em 1.2em;
   position: relative;
-  border: 3px solid;
-  border-color: $button_color;
+  font-size: 16px;
+  border: 2px solid $button_color;
+  line-height: 16px;
+  display: inline-block;
+  padding: .617em 1em; // Equivalent based on input height... ugh.
   letter-spacing: 2px;
-  font-size: 1em;
+
   &:focus,
   &:hover {
-    color: white;
     cursor: pointer;
     opacity: .9;
   }

@@ -8,13 +8,13 @@ class MarkupHelper
     {
         $class = new self;
 
-        add_action('sl_before_header', [$class, 'svgSprites']);
+        add_action('candidate_before_header', [$class, 'svgSprites']);
 
-        add_action('sl_after_header', [$class, 'afterHeader']);
-        add_action('sl_before_footer', [$class, 'beforeFooter']);
+        add_action('candidate_after_header', [$class, 'afterHeader']);
+        add_action('candidate_before_footer', [$class, 'beforeFooter']);
 
-        add_action('sl_before_header', [$class, 'beforeHeader']);
-        add_action('sl_after_footer', [$class, 'afterFooter']);
+        add_action('candidate_before_header', [$class, 'beforeHeader']);
+        add_action('candidate_after_footer', [$class, 'afterFooter']);
     }
 
     public function svgSprites()

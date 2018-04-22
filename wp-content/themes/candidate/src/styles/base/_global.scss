@@ -1,9 +1,12 @@
 // global
 body {
   margin: 0;
-  font-size: 18px;
   -webkit-font-smoothing: antialiased;
-  //color: $brand__light;
+  color: $brand__dark;
+  font-size: 14px;
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -59,6 +62,10 @@ ul {
 
 }
 
+li {
+  padding-left: 1em;
+}
+
 ol {
 
 }
@@ -72,11 +79,14 @@ img {
 }
 
 input:not([type="submit"]) {
-  border: 0;
-  font-size: 1em;
+  background-color: white;
+  color: $brand__dark;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: $input__border-radius;
+  line-height: 16px;
+  display: inline-block;
   padding: .5em 1em;
-  display: block;
-  border-radius: 3px;
 }
 
 textarea {
@@ -87,6 +97,18 @@ figure {
   margin: 0;
 }
 
+form {
+  ul {
+    list-style-type: none;
+    padding-left: 15px;
+  }
+  li {
+    padding-left: 0;
+  }
+  [type="checkbox"] {
+    margin-right: .5em;
+  }
+}
 
 #wrapper {
   position: relative;
@@ -131,7 +153,7 @@ figure {
   padding-bottom: 50px;
 }
 
-//.page_header .container {
-//  padding: 50px 0;
-//  text-align: center;
-//}
+.box-shadow {
+  box-shadow: 0px 6px 23px rgba(0, 0, 0, .5);
+}
+

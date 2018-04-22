@@ -3,44 +3,36 @@
  * Template Name: Issues
  */
 
+use HG\CandidateCore\TemplateData\Issues;
+use HG\CandidateCore\Utils\Esc;
+
+$data = new Issues();
+
 get_header();
 get_template_part('template-parts/page-header');
 ?>
-    <section class="issues main_template template-part">
+    <section class="page__wrapper template-part">
         <div class="container">
-            <div class="content__inner">
-                <div class="issue">
-                    <h3>Issue Title</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque in velit sodales ullamcorper. Curabitur consequat quis magna nec iaculis. Donec imperdiet, ipsum non pulvinar egestas, quam ligula molestie est, non ultricies mauris diam non lorem. Quisque a velit dignissim, blandit quam tincidunt, mattis dolor. Sed sit amet sem nec libero fringilla ultrices. Nulla convallis ultrices pretium. Nullam posuere elit eu sapien vestibulum mattis.
-                </div>
-                <hr class="mainHR">
-                <div class="issue">
-                    <h3>Issue Title</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque in velit sodales ullamcorper. Curabitur consequat quis magna nec iaculis. Donec imperdiet, ipsum non pulvinar egestas, quam ligula molestie est, non ultricies mauris diam non lorem. Quisque a velit dignissim, blandit quam tincidunt, mattis dolor. Sed sit amet sem nec libero fringilla ultrices. Nulla convallis ultrices pretium. Nullam posuere elit eu sapien vestibulum mattis.
-                </div>
-                <hr class="mainHR">
-                <div class="issue">
-                    <h3>Issue Title</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque in velit sodales ullamcorper. Curabitur consequat quis magna nec iaculis. Donec imperdiet, ipsum non pulvinar egestas, quam ligula molestie est, non ultricies mauris diam non lorem. Quisque a velit dignissim, blandit quam tincidunt, mattis dolor. Sed sit amet sem nec libero fringilla ultrices. Nulla convallis ultrices pretium. Nullam posuere elit eu sapien vestibulum mattis.
-                </div>
-                <hr class="mainHR">
-                <div class="issue">
-                    <h3>Issue Title</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque in velit sodales ullamcorper. Curabitur consequat quis magna nec iaculis. Donec imperdiet, ipsum non pulvinar egestas, quam ligula molestie est, non ultricies mauris diam non lorem. Quisque a velit dignissim, blandit quam tincidunt, mattis dolor. Sed sit amet sem nec libero fringilla ultrices. Nulla convallis ultrices pretium. Nullam posuere elit eu sapien vestibulum mattis.
-                </div>
-                <hr class="mainHR">
-                <div class="issue">
-                    <h3>Issue Title</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque in velit sodales ullamcorper. Curabitur consequat quis magna nec iaculis. Donec imperdiet, ipsum non pulvinar egestas, quam ligula molestie est, non ultricies mauris diam non lorem. Quisque a velit dignissim, blandit quam tincidunt, mattis dolor. Sed sit amet sem nec libero fringilla ultrices. Nulla convallis ultrices pretium. Nullam posuere elit eu sapien vestibulum mattis.
-                </div>
-                <hr class="mainHR">
-                <div class="issue">
-                    <h3>Issue Title</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque in velit sodales ullamcorper. Curabitur consequat quis magna nec iaculis. Donec imperdiet, ipsum non pulvinar egestas, quam ligula molestie est, non ultricies mauris diam non lorem. Quisque a velit dignissim, blandit quam tincidunt, mattis dolor. Sed sit amet sem nec libero fringilla ultrices. Nulla convallis ultrices pretium. Nullam posuere elit eu sapien vestibulum mattis.
-                </div>
+            <div class="page__inner box-shadow">
+                <?php
+                if (empty(get_object_vars($data->issues_items))) :
+                    ?>
+                    <article>
+                        <h2><?php echo __('Coming soon'); ?></h2>
+                    </article>
+                <?php
+                else :
+                    foreach ($data->issues_items as $issue) : ?>
+                        <article class="issue">
+                            <h3><?php echo Esc::title($issue->title); ?></h3>
+                            <p><?php echo wp_kses_post($issue->description); ?></p>
+                        </article>
+                    <?php
+                    endforeach;
+                endif;
+                ?>
             </div>
         </div>
     </section>
 <?php
-get_template_part('template-parts/cta');
 get_footer();

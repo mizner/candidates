@@ -4,10 +4,10 @@
  */
 ?>
 
-<section class="page_header template-part">
-	<div class="container">
-		<div class="page_header__inner">
-			<h1>Page Title</h1>
-		</div>
-	</div>
-</section>
+<header class="page-header template-part">
+    <div class="container">
+        <div class="page-header__inner">
+            <h1><?php the_title(); ?></h1>
+        </div>
+    </div>
+</header>

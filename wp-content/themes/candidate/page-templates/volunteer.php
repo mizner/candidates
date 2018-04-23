@@ -16,7 +16,7 @@ if (class_exists(Volunteer::class)) :
              style="background-image: url('<?php echo esc_url($data->background_image); ?>');
                      background-size: cover;
                      background-position: center">
-        <div class="container box-shadow">
+        <div class="container">
             <article class="page__inner">
                 <h3><?php echo Esc::title($data->subtitle); ?></h3>
                 <?php echo Esc::WYSIWYG($data->description); ?>

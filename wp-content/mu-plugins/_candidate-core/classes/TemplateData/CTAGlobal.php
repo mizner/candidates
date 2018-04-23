@@ -21,7 +21,7 @@ class CTAGlobal
     public function __construct()
     {
         $this->title = get_option(self::$prefix.'cta_title') ?: Fallback::title();
-        $this->description = get_option(self::$prefix.'cta_title') ?: Fallback::paragraph();
+        $this->description = get_option(self::$prefix.'cta_description') ?: Fallback::paragraph();
         $this->button(self::$prefix.'button_one', 'Volunteer', get_home_url().'/volunteer');
         $this->button(self::$prefix.'button_two', 'Donate', get_home_url().'/donate');
     }

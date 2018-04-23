@@ -21,7 +21,7 @@ opt
 /wp-content/uploads/*
 /wp-content/plugins/*
 /wp-content/themes/*
-/wp-content/mu-plugins/
+/wp-content/mu-plugins/*
 
 !/wp-content/themes/candidate
 !/wp-content/mu-plugins/_candidate-core

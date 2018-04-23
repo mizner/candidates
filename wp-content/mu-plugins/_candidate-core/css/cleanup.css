@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# Yoast SEO
+--------------------------------------------------------------*/
+button.wpseo-add-keyword {
+    display: none !important;
+}
+.yoast-notice-go-premium {
+    display: none !important;
+}
+.wpseo-metabox-buy-premium {
+    display: none !important;
+}
+
+.wpseo_content_wrapper #sidebar-container {
+    display: none !important;
+}
+
+#i18n_promo_box {
+    display: none !important;
+}
+
+.yoast_premium_upsell_admin_block {
+    display: none !important;
+}
+
+.toplevel_page_wpseo_dashboard .wp-submenu li:last-child {
+    display: none !important;
+}

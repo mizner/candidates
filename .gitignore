@@ -30,6 +30,7 @@ opt
 !/wp-content/mu-plugins/must-use-plugin-loader.php
 
 /core
+/wp-content/index.php
 /wp-config.php
 /wp-activate.php
 /wp-cron.php

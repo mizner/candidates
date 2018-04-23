@@ -6,7 +6,7 @@ use HG\CandidateCore\TemplateData\Feature;
 use HG\CandidateCore\Utils\Esc;
 
 $data = new Feature('feature_one');
-if ($data->active) :
+if ($data->active === 'yes') :
     ?>
     <section class="feature template-part background-color__primary">
         <div class="container">

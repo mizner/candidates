@@ -29,7 +29,6 @@ class SocialMedia
 
         for ($i = 0; $i < $count; ++$i) {
             $parent_prefix = "{$this->prefix}items_{$i}_";
-            _log($parent_prefix);
 
             $network = get_option($parent_prefix.'network');
             $url     = get_option($parent_prefix.'url');

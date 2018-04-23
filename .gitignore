@@ -25,6 +25,7 @@ opt
 
 !/wp-content/themes/candidate
 !/wp-content/mu-plugins/_candidate-core
+!/wp-content/mu-plugins/must-use-plugin-loader.php
 
 /core
 /wp-config.php

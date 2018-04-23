@@ -6,12 +6,16 @@
 use HG\CandidateCore\TemplateData\Volunteer;
 use HG\CandidateCore\Utils\Esc;
 
-$data = new Volunteer();
-
 get_header();
 get_template_part('template-parts/page-header');
-?>
-    <section class="volunteer">
+
+if (class_exists(Volunteer::class)) :
+    $data = new Volunteer();
+    ?>
+    <section class="volunteer background-color__primary"
+             style="background-image: url('<?php echo esc_url($data->background_image); ?>');
+                     background-size: cover;
+                     background-position: center">
         <div class="container box-shadow">
             <article class="page__inner">
                 <h3><?php echo Esc::title($data->subtitle); ?></h3>
@@ -27,4 +31,5 @@ get_template_part('template-parts/page-header');
         </div>
     </section>
 <?php
+endif;
 get_footer();

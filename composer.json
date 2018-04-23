@@ -53,7 +53,6 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "wp core download --path=core --skip-content --force"
     ],
     "post-update-cmd": [
     ]

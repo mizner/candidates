@@ -4,6 +4,7 @@
 .env
 debug.log
 local-phpinfo.php
+.htaccess
 
 
 ## Composer
@@ -48,3 +49,5 @@ opt
 /wp-includes
 /wp-admin
 /wp-content/debug.log
+/fw-config.php
+

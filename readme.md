@@ -1,17 +1,20 @@
-(Instructions are a work-in-progress)
-
-* `cd` into the site folder e.g `cd ~/Local/app/`
-* Nuke `public` folder `rm -rf public` (be careful with this command, you can also just delete with finder)
-* `git clone https://github.com/mizner/candidates public`
-* Make sure you have a `wp-config.php` (with the following... or something like it)
-```php
-define('WP_SITEURL', "http://candidates.test/core");
-define('WP_HOME', "http://candidates.test");
-define('WP_CONTENT_DIR', dirname(__FILE__).'/wp-content');
-define('WP_CONTENT_URL', dirname(__FILE__)."http://candidates.test/wp-content"); 
-```
-* `index.php` (with `require dirname(__FILE__) . '/core/wp-blog-header.php';`)
-* `composer install` (installs plugins)
+* Login to Flywheel
+* Create new Flywheel site
+* Add yourself as a collaborator
+* Change privacy mode credentials
+* Pull site to local
+* Open Sequel Pro & delete database tables
+* Open local site
+* Go through WordPress install process
+* Test login
+* Open github candidates 
+* Open project in phpStorm
+* Open terminal
+* `git init .`
+* `git remote add origin https://github.com/mizner/candidates`
+* `git fetch origin`
+* `git checkout master`
+* `composer install` (installs plugins and dependencies)
 * `cd wp-content/themes/candidate`
 * `yarn install` (`npm install` works too)
 * `yarn build` (does `gulp build` for you)

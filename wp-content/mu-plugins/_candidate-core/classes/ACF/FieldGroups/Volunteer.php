@@ -55,6 +55,13 @@ class Volunteer
     private function fields()
     {
         return [
+            // Volunteer Background Image
+            [
+                'label' => 'Background Image',
+                'key'   => 'volunteer_background_image',
+                'name'  => 'volunteer_background_image',
+                'type'  => 'image',
+            ],
             // Volunteer Title
             [
                 'label' => 'Subtitle',

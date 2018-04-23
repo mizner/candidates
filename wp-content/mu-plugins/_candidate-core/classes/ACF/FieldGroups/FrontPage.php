@@ -76,20 +76,20 @@ class FrontPage
                 'name'  => 'hero_title',
                 'type'  => 'text',
             ],
-            // Hero Button One
-            [
-                'label' => 'Hero Button One',
-                'key'   => 'hero_button_one',
-                'name'  => 'hero_button_one',
-                'type'  => 'link',
-            ],
-            // Hero Button Two
-            [
-                'label' => 'Hero Button Two',
-                'key'   => 'hero_button_two',
-                'name'  => 'hero_button_two',
-                'type'  => 'link',
-            ],
+            // // Hero Button One
+            // [
+            //     'label' => 'Hero Button One',
+            //     'key'   => 'hero_button_one',
+            //     'name'  => 'hero_button_one',
+            //     'type'  => 'link',
+            // ],
+            // // Hero Button Two
+            // [
+            //     'label' => 'Hero Button Two',
+            //     'key'   => 'hero_button_two',
+            //     'name'  => 'hero_button_two',
+            //     'type'  => 'link',
+            // ],
             // Intro Tab
             [
                 'label' => 'Intro',

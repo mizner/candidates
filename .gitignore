@@ -21,9 +21,10 @@ opt
 /wp-content/uploads/*
 /wp-content/plugins/*
 /wp-content/themes/*
+/wp-content/mu-plugins/
 
 !/wp-content/themes/candidate
-!/wp-content/plugins/_candidate-core
+!/wp-content/mu-plugins/_candidate-core
 
 /core
 /wp-config.php
@@ -46,4 +47,3 @@ opt
 /wp-includes
 /wp-admin
 /wp-content/debug.log
-/wp-content/mu-plugins/

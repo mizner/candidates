@@ -1,0 +1,22 @@
+@mixin button {
+  $button_color: $brand-color__primary;
+  background-color: $button_color;
+  text-transform: uppercase;
+  color: white;
+  margin: auto;
+  transition: 400ms ease all;
+  border-radius: 3px;
+  position: relative;
+  font-size: 16px;
+  border: 2px solid $button_color;
+  line-height: 16px;
+  display: inline-block;
+  padding: .617em 1em; // Equivalent based on input height... ugh.
+  letter-spacing: 2px;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    opacity: .9;
+  }
+}

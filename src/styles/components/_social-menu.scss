@@ -1,0 +1,103 @@
+.menu-social li a {
+  &:before {
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: top;
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 1.4em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  span::before {
+    width: 20px;
+    height: 20px;
+    color: #999;
+    border-radius: 20px;
+  }
+
+  /* Menu uses Font Awesome icons */
+  [href*="facebook.com"]::before {
+    content: '\f09a';
+  }
+
+  [href*="twitter.com"]::before {
+    content: '\f099';
+  }
+
+  [href*="github.com"]::before {
+    content: '\f09b';
+  }
+
+  [href*="linkedin.com"]::before {
+    content: '\f0e1';
+  }
+
+  [href*="wordpress.com"]::before,
+  [href*="wordpress.org"]::before {
+    content: '\f19a';
+  }
+
+  [href*="tumblr.com"]::before {
+    content: '\f173';
+  }
+
+  [href*="plus.google.com"]::before {
+    content: '\f0d5';
+  }
+
+  [href*="dribbble.com"]::before {
+    content: '\f17d';
+  }
+
+  [href*="instagram.com"]::before {
+    content: '\f16d';
+  }
+
+  [href*="vimeo.com"]::before {
+    content: '\f194';
+  }
+
+  [href*="youtube.com"]::before {
+    content: '\f167';
+  }
+
+  [href*="pinterest.com"]::before {
+    content: '\f0d2';
+  }
+
+  [href*="flickr.com"]::before {
+    content: '\f16e';
+  }
+
+  [href*="bitbucket.com"]::before {
+    content: '\f171';
+  }
+
+  [href*="digg.com"]::before {
+    content: '\f1a6';
+  }
+
+  [href*="reddit.com"]::before {
+    content: '\f1a1';
+  }
+
+  [href*="codepen.io"]::before {
+    content: '\f1cb';
+  }
+
+  [href*="behance.com"]::before {
+    content: '\f1b4';
+  }
+
+  [href*="slideshare.net"]::before {
+    content: '\f1e7';
+  }
+
+  [href*="/feed"]::before {
+    content: '\f413';
+  }
+
+  [href*="subscribe"]::before {
+    content: '\f410';
+  }
+}

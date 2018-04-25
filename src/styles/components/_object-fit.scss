@@ -1,0 +1,13 @@
+.object-fit {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+  }
+  &__fallback-support {
+    opacity: 0;
+  }
+}

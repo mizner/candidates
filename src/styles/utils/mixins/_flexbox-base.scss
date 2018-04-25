@@ -1,0 +1,12 @@
+@mixin flexbox-base {
+  display: flex;
+  flex-wrap: wrap;
+  > * {
+    flex: 1 100%;
+  }
+}
+
+@mixin flexbox-width($number) {
+  flex: 1 $number;
+  max-width: $number;
+}

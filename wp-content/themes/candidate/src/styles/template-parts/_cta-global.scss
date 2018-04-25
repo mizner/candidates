@@ -7,4 +7,10 @@
     display: flex;
     justify-content: space-evenly;
   }
+  #{$base}__inner {
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
 }

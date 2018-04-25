@@ -35,8 +35,10 @@
     margin: 10px auto;
     height: $height;
     line-height: $height;
+    text-align: center;
     @include for-tablet-portrait-up {
       margin: 0;
+      text-align: left;
     }
     img {
       height: 100%;

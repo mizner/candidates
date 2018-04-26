@@ -3,9 +3,29 @@
   color: white;
   text-align: center;
   #{$base}__buttons {
-    margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    flex-flow: column wrap;
+    justify-content: center !important;
+    align-items: center;
+    margin-top: 15px !important;
+    @include for-tablet-landscape-up {
+      margin-top: 50px;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+    }
+    > * {
+      padding: 1em;
+      width: 100%;
+      flex: 1 100% !important;
+      max-width: 325px !important;
+      @include for-tablet-landscape-up {
+        flex: 1 50%;
+        max-width: 50%;
+      }
+      button {
+        width: 100%;
+      }
+    }
   }
   #{$base}__inner {
     p {

@@ -15,18 +15,18 @@ if (class_exists(CTAGlobal::class)) :
                 <h3><?php echo Esc::title($data->title); ?></h3>
                 <p><?php echo Esc::WYSIWYG($data->description); ?></p>
                 <div class="cta-global__buttons">
-                    <a href="<?php echo esc_url($data->buttons[0]->url); ?>">
+                    <a href="https://tnmap.tn.gov/voterlookup/">
                         <button class="button button__secondary"
                                 role="button"
                                 type="button">
-                            <span><?php echo esc_html__($data->buttons[0]->title, 'candidate'); ?></span>
+                            <span>Find Your Polling Station</span>
                         </button>
                     </a>
-                    <a href="<?php echo esc_url($data->buttons[1]->url); ?>">
+                    <a href="http://www.govotetn.com/">
                         <button class="button button__secondary"
                                 role="button"
                                 type="button">
-                            <span><?php echo esc_html($data->buttons[1]->title, 'candidate'); ?></span>
+                            <span>Register To Vote</span>
                         </button>
                     </a>
                 </div>

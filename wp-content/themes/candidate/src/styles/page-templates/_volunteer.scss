@@ -1,0 +1,25 @@
+.volunteer {
+  $base: &;
+
+  header {
+    padding-bottom: 0;
+    color: white;
+  }
+
+  #{$base}__container {
+
+    .mailchimp-form {
+      padding-top: 0;
+      padding-bottom: 100px;
+    }
+
+    article {
+      color: white;
+      padding: 1em 2em;
+      max-width: 750px;
+      margin: 0 auto 2em;
+    }
+
+  }
+
+}

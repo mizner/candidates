@@ -31,12 +31,10 @@
   #{$self}__logo {
     $height: 100px;
     text-align: center;
-
     max-width: 200px;
     margin: 10px auto 25px;
     height: $height;
     line-height: $height;
-    text-align: center;
     @include for-tablet-portrait-up {
       margin: 0;
       text-align: left;

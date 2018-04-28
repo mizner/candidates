@@ -42,12 +42,12 @@ p {
 }
 
 a {
-  color: $brand__blue;
+  color: $brand-color__secondary;
   text-decoration: none;
   &:focus,
   &:hover {
     cursor: pointer;
-    color: $brand__blue;
+    color: $brand-color__primary;
     &:after {
       color: inherit;
     }

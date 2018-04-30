@@ -6,13 +6,19 @@ use HG\CandidateCore\Utils\Esc;
 
 $data = new Hero();
 
+$classes   = [];
+$classes[] = 'hero';
+$classes[] = 'template-part';
+$classes[] = 'background-color__secondary';
+$classes[] = 'hero-alignment-' . $data->hero_alignment;
+$classes[] = $data->hero_content_background;
 ?>
 
-<section class="hero template-part background-color__secondary <?php echo esc_attr('hero-alignment-' . $data->hero_alignment); ?>">
-        <img class="hero-background-image" src="<?php echo esc_url( $data->background_image ); ?>"
-             alt="<?php echo Esc::title( $data->title ); ?>">
-        <img class="hero-mobile-image" src="<?php echo esc_url( $data->background_image_mobile ); ?>"
-             alt="<?php echo Esc::title( $data->title ); ?>">
+<section class="hero template-part background-color__secondary <?php echo esc_attr( implode( ' ', $classes ) ) ?>">
+    <img class="hero-background-image" src="<?php echo esc_url( $data->background_image ); ?>"
+         alt="<?php echo Esc::title( $data->title ); ?>">
+    <img class="hero-mobile-image" src="<?php echo esc_url( $data->background_image_mobile ); ?>"
+         alt="<?php echo Esc::title( $data->title ); ?>">
     <div class="container">
 
         <div class="hero__cta">

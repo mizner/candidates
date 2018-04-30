@@ -7,8 +7,11 @@ use HG\CandidateCore\Utils\Esc;
 
 if (class_exists(Header::class)) :
     $data = new Header();
+    $classes = [];
+    $classes[] = 'site-header';
+    $classes[] = $data->header_background;
     ?>
-    <header id="siteHeader" class="site-header">
+    <header id="siteHeader" class="<?php echo esc_attr(implode(' ', $classes)) ?>">
         <div class="container">
             <div class="site-header__primary">
                 <a href="<?php echo Esc::url(get_home_url()); ?>">
@@ -41,7 +44,7 @@ if (class_exists(Header::class)) :
                         </button>
                     </a>
                 </div>
-                <?php get_template_part('template-parts/navigation-primary'); ?>
+	            <?php get_template_part('template-parts/navigation-primary'); ?>
             </div>
         </div>
     </header><!-- #siteHeader -->

@@ -83,6 +83,20 @@ class FrontPage {
 				'name'  => 'hero_image_mobile',
 				'type'  => 'image',
 			],
+			// Hero Content Background Color
+			[
+				'label'         => 'Content Background',
+				'key'           => 'hero_content_background',
+				'name'          => 'hero_content_background',
+				'type'          => 'radio',
+				'choices'       => [
+					'transparent'      => 'Transparent',
+					'background_color_light' => 'Light',
+					'background_color_dark' => 'Dark',
+				],
+				'default_value' => 'transparent',
+				'layout'        => 'horizontal',
+			],
 			// Hero Title
 			[
 				'label' => 'Title',

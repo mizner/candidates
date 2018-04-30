@@ -11,6 +11,7 @@ if ($data->active) :
         <div class="container">
             <div class="donation__primary">
                 <h3><?php echo Esc::title($data->title); ?></h3>
+                <p><?php echo Esc::title($data->description); ?></p>
             </div>
             <div class="donation__secondary">
                 <?php foreach ($data->amounts as $amount) : ?>

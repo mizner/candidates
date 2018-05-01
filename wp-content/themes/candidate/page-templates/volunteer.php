@@ -16,7 +16,14 @@ if (class_exists(Volunteer::class)) :
                      background-size: cover;
                      background-position: top center;
                      background-attachment: fixed;">
-	    <?php get_template_part('template-parts/page-header'); ?>
+        <header class="page-header template-part">
+            <div class="container">
+                <div class="page-header__inner">
+                    <h1><?php the_title(); ?></h1>
+                    <hr class="pageHR">
+                </div>
+            </div>
+        </header>
         <div class="container volunteer__container">
             <article class="page__inner">
                 <h3><?php echo Esc::title($data->subtitle); ?></h3>

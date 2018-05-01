@@ -11,9 +11,9 @@ $data = new Issues();
 get_header();
 get_template_part('template-parts/page-header');
 ?>
-    <section class="page__wrapper template-part">
+    <section class="page__inner box-shadow">
         <div class="container">
-            <div class="page__inner box-shadow">
+            <div class="content__inner">
                 <?php
                 if (empty(get_object_vars($data->issues_items))) :
                     ?>

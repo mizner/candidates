@@ -37,7 +37,7 @@ if (class_exists(Header::class)) :
                         </button>
                     </a>
                     <a href="<?php echo esc_url($data->buttons[1]->url); ?>">
-                        <button class="site-header__button button button__secondary"
+                        <button class="site-header__button button button__red"
                                 role="button"
                                 type="button">
                             <span><?php echo Esc::title($data->buttons[1]->title, 'candidate'); ?></span>

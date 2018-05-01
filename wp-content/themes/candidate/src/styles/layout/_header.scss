@@ -31,18 +31,21 @@
   #{$self}__logo {
     $height: 100px;
     text-align: center;
-    max-width: 200px;
     margin: 10px auto 25px;
     height: $height;
     line-height: $height;
     @include for-tablet-portrait-up {
       margin: 0;
       text-align: left;
+      //max-width: 200px;
     }
     img {
       height: 100%;
       display: inline-block;
       vertical-align: middle;
+      object-fit: contain;
+      max-width: 300px;
+      width: 100%;
     }
   }
 
@@ -79,6 +82,7 @@
       flex-wrap: wrap;
       @include for-tablet-portrait-up {
         justify-content: flex-end;
+        margin-bottom: 0;
       }
       li {
         @include for-phone-only {
@@ -92,4 +96,37 @@
       }
     }
   }
+}
+
+header.background-color__primary,
+header.background-color__secondary {
+
+  a {
+    color: white;
+    transition: all 400ms;
+
+    &:hover {
+      opacity: .7;
+    }
+
+  }
+
+  button.button__primary__ghosty {
+    border-color: white;
+
+    span {
+      color: white;
+    }
+
+    &:hover {
+      background: white;
+
+      span {
+        color: $brand__red;
+      }
+
+    }
+
+  }
+
 }

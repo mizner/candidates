@@ -16,7 +16,7 @@ if ($data->active) :
             <div class="donation__secondary">
                 <?php foreach ($data->amounts as $amount) : ?>
                     <a href="<?php echo esc_url("{$data->form_url}/?amount={$amount}"); ?>">
-                        <button class="button button__secondary">
+                        <button class="button button__red">
                             <span><?php echo __('$'.Esc::title($amount)); ?></span>
                         </button>
                     </a>

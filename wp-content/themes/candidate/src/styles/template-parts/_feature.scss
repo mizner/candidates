@@ -11,7 +11,7 @@
     width: 100%;
     @include flexbox-base;
     > * {
-      @include for-tablet-portrait-up {
+      @include for-tablet-landscape-up {
         @include flexbox-width(50%);
         order: 1;
       }
@@ -32,18 +32,22 @@
   #{$base}__image {
     img {
       width: 100%;
+      @include for-tablet-landscape-up {
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
   &.background-color__primary {
     #{$base}__image {
-      @include for-tablet-portrait-up {
+      @include for-tablet-landscape-up {
         order: 1;
       }
     }
   }
   &.background-color__secondary {
     #{$base}__image {
-      @include for-tablet-portrait-up {
+      @include for-tablet-landscape-up {
         order: 2;
       }
     }

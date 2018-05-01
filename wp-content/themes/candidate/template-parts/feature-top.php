@@ -19,7 +19,7 @@ if ($data->active === 'yes') :
                     <?php echo Esc::WYSIWYG($data->description); ?>
                     <?php if ($data->button) : ?>
                         <a href="<?php echo Esc::url($data->button->url); ?>">
-                            <button class="button">
+                            <button class="button button__secondary">
                                 <span><?php echo Esc::title($data->button->title); ?></span>
                             </button>
                         </a>

@@ -97,9 +97,74 @@
 
 }
 
-//.hero {
-//  $self: &;
-//  .background-image {
-//    opacity: .7;
-//  }
-//}
+.hero-content-bg-dark, .hero-content-bg-light {
+
+  @include for-tablet-portrait-up {
+
+    .hero__cta {
+      padding: 25px;
+      max-width: 400px!important;
+
+      h2 {
+        font-size: 1.75em;
+      }
+
+    }
+
+  }
+
+}
+
+.hero-content-bg-dark {
+
+  @include for-tablet-portrait-up {
+    .hero__cta {
+      background: rgba(0, 0, 0, 0.75);
+      //background: rgba(51,51,51,.75);
+      border: 2px solid white;
+
+      //svg {
+      //  fill: $brand__gray;
+      //}
+      //
+      input#mce-EMAIL {
+        border: 2px solid white;
+      }
+
+      button#mc-embedded-subscribe {
+        background: $brand__red;
+        border: 1px solid $brand__red;
+      }
+
+    }
+  }
+
+}
+
+.hero-content-bg-light {
+
+  @include for-tablet-portrait-up {
+    .hero__cta {
+      background: rgba(255,255,255,.75);
+      border: 4px double #333;
+
+      h2 {
+        color: initial;
+      }
+
+      svg {
+        fill: $brand__gray;
+      }
+
+      input#mce-EMAIL {
+        border: 2px solid #333;
+      }
+
+      button#mc-embedded-subscribe {
+        border-width: 1px;
+      }
+
+    }
+  }
+
+}

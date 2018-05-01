@@ -90,9 +90,9 @@ class FrontPage {
 				'name'          => 'hero_content_background',
 				'type'          => 'radio',
 				'choices'       => [
-					'transparent'      => 'Transparent',
+					'transparent'            => 'Transparent',
 					'background_color_light' => 'Light',
-					'background_color_dark' => 'Dark',
+					'background_color_dark'  => 'Dark',
 				],
 				'default_value' => 'transparent',
 				'layout'        => 'horizontal',
@@ -190,9 +190,9 @@ class FrontPage {
 			],
 			// Feature One Text
 			[
-				'label' => 'Text',
-				'key'   => 'feature_one_text',
-				'name'  => 'feature_one_text',
+				'label' => 'Title',
+				'key'   => 'feature_one_title',
+				'name'  => 'feature_one_title',
 				'type'  => 'text',
 			],
 			// Feature One Description

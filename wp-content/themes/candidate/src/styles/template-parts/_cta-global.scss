@@ -5,9 +5,9 @@
   #{$base}__buttons {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center !important;
+    justify-content: center;
     align-items: center;
-    margin-top: 15px !important;
+    margin-top: 15px;
     @include for-tablet-landscape-up {
       margin-top: 50px;
       justify-content: space-evenly;
@@ -16,11 +16,19 @@
     > * {
       padding: 1em;
       width: 100%;
-      flex: 1 100% !important;
-      max-width: 325px !important;
+      flex: 1 100%;
+      max-width: 100%;
+      @include for-tablet-portrait-up {
+        flex: 1 60%;
+        max-width: 60%;
+      }
       @include for-tablet-landscape-up {
         flex: 1 50%;
         max-width: 50%;
+      }
+      @include for-desktop-up {
+        flex: 1 40%;
+        max-width: 40%;
       }
       button {
         width: 100%;

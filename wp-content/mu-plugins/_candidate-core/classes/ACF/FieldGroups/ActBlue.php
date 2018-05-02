@@ -61,6 +61,12 @@ class ActBlue
                 'type'          => 'text',
                 'default_value' => '<strong>Support</strong> our campaign',
             ],
+	        [
+		        'label'         => 'Description',
+		        'key'           => $this->prefix('description'),
+		        'name'          => 'description',
+		        'type'          => 'textarea',
+	        ],
             [
                 'label'         => 'Contribution form name',
                 'instructions'  => '(e.g. https://secure.actblue.com/contribute/page/FORM_NAME)',

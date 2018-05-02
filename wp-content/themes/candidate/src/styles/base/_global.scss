@@ -42,12 +42,12 @@ p {
 }
 
 a {
-  color: $brand__blue;
+  color: $brand-color__secondary;
   text-decoration: none;
   &:focus,
   &:hover {
     cursor: pointer;
-    color: $brand__blue;
+    color: $brand-color__primary;
     &:after {
       color: inherit;
     }
@@ -155,5 +155,18 @@ form {
 
 .box-shadow {
   box-shadow: 0px 6px 23px rgba(0, 0, 0, .5);
+}
+
+button.button__red {
+  background: $brand__red;
+  border-color: $brand__red;
+
+  &:hover {
+    //background: white;
+    //a {
+    //  color: $brand__red;
+    //}
+  }
+
 }
 

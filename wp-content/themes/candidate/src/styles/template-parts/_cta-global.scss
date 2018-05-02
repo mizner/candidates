@@ -1,3 +1,41 @@
+section.contact_cta {
+  text-align: center;
+  padding-top: 0px;
+  h3 {
+    color: $brand__red;
+  }
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  svg {
+    width: 45px;
+    height: 45px;
+    fill: $brand__red;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 400ms;
+
+    &:hover {
+      fill: $brand__dark;
+    }
+  }
+}
+}
+
+.home section.contact_cta {
+  display: none;
+}
+
+//.page-template-volunteer section.contact_cta {
+//  display: none;
+//  background-image: url(/wp-content/uploads/2018/05/ballinger-volunteer-blue1.jpg);
+//  background-size: cover;
+//  background-position: top center;
+//  background-attachment: fixed;
+//}
+
+
 .cta-global {
   $base: &;
   color: white;

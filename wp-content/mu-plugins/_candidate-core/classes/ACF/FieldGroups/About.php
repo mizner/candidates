@@ -59,6 +59,13 @@ class About
                 'media_upload' => 0,
                 'delay'        => 1,
             ],
+	        // About Content Image
+	        [
+		        'label' => 'Content Image',
+		        'key'   => 'about_content_image',
+		        'name'  => 'about_content_image',
+		        'type'  => 'image',
+	        ],
         ];
     }
 }

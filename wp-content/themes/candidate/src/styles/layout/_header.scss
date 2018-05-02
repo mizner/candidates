@@ -104,11 +104,12 @@ header.background-color__secondary {
   a {
     color: white;
     transition: all 400ms;
+  }
 
+  li.menu-item a {
     &:hover {
       opacity: .7;
     }
-
   }
 
   button.button__primary__ghosty {

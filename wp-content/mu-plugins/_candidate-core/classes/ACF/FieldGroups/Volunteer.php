@@ -62,6 +62,13 @@ class Volunteer
                 'name'  => 'volunteer_background_image',
                 'type'  => 'image',
             ],
+	        // Volunteer Content Image
+	        [
+		        'label' => 'Content Image',
+		        'key'   => 'volunteer_content_image',
+		        'name'  => 'volunteer_content_image',
+		        'type'  => 'image',
+	        ],
             // Volunteer Title
             [
                 'label' => 'Subtitle',
@@ -86,13 +93,6 @@ class Volunteer
                 'name'  => 'volunteer_form',
                 'type'  => 'textarea',
             ],
-	        // Volunteer Content Image
-	        [
-		        'label' => 'Content Image',
-		        'key'   => 'volunteer_content_image',
-		        'name'  => 'volunteer_content_image',
-		        'type'  => 'image',
-	        ],
         ];
     }
 }

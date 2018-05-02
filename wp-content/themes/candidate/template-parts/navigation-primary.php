@@ -1,3 +1,5 @@
+<button id="menuMobileButton" class="button"><span>MENU</span></button>
+
 <?php
 if (has_nav_menu('menu_primary')) :
     wp_nav_menu([

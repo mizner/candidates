@@ -1,10 +1,16 @@
 .page {
   $base: &;
   #{$base}__inner {
-    @include for-tablet-portrait-up {
+    padding: 2em;
+    max-width: 500px;
+    margin: auto auto 2em;
+    background: white;
+    @include for-phone-only {
+      max-width: 325px;
+    }
+    @include for-tablet-landscape-up {
       padding: 2em 3em;
       max-width: 900px;
-      margin: auto;
     }
   }
 }

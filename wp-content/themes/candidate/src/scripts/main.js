@@ -15,5 +15,5 @@
         elementToggleAria(menu);
         elementToggleAria(button);
     };
-    
+
 })(jQuery);

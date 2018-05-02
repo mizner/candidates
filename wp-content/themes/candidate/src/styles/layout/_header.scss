@@ -83,8 +83,8 @@
         margin-right: 0;
       }
       &.button__primary {
-        @include for-phone-only {
-          @include screen-reader-text;
+        @include for-tablet-portrait-up {
+          //@include screen-reader-text;
         }
       }
     }
@@ -116,13 +116,27 @@
   .site-header__secondary {
     button.site-header__button.button.button__red {
       width: 300px;
+      order: 1;
+    }
+    button.button__primary__ghosty {
+      width: 300px;
+      order: 1;
+      margin-bottom: 15px;
     }
     .main-header-menu {
       text-align: center;
       margin-bottom: 15px;
+      order: 2;
       button#menuMobileButton, nav#menuPrimary {
         width: 300px;
         margin: 0 auto;
+      }
+      button#menuMobileButton {
+        background: transparent;
+        border-color: transparent;
+        svg#Layer_1 {
+          fill: white;
+        }
       }
     }
   }

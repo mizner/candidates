@@ -1,8 +1,8 @@
 button#menuMobileButton {
   margin-top: 15px;
-  background: white;
-  border-color: white;
-  color: $brand__blue;
+  //background: white;
+  //border-color: white;
+  //color: $brand__blue;
   @include for-tablet-portrait-up {
     display: none;
   }
@@ -22,12 +22,11 @@ button#menuMobileButton {
   //transition: all 400ms;
   height: auto;
 }
-
+@media screen and (max-width: 599px) {
 nav#menuPrimary {
-
-  @media screen and (max-width: 599px) {
-
     background: $brand__blue;
+    border: 1px solid white;
+    visibility: hidden;
 
     ul#menu-primary-navigation {
       padding: 0 25px;
@@ -36,10 +35,15 @@ nav#menuPrimary {
       li.menu-item {
         border-bottom: 1px solid white;
         padding: 8px;
+        text-align: left;
       }
 
     }
 
+  }
+
+  nav#menuPrimary[aria-expanded="true"] {
+    visibility: visible;
   }
 
 }

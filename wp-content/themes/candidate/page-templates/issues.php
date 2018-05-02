@@ -33,7 +33,7 @@ get_template_part('template-parts/page-header');
                 ?>
             </div>
             <div class="image__inner">
-                <?php the_post_thumbnail( 'full' ); ?>">
+                <?php the_post_thumbnail( 'full' ); ?>
             </div>
         </div>
     </section>

@@ -34,7 +34,7 @@ class Issues
             $parent_prefix = "{$this->prefix}items_{$i}_";
 
             $title       = Meta::get($this->id, $parent_prefix.'title') ?: Fallback::title();
-            $description = Meta::get($this->id, $parent_prefix.'description') ?: Fallback::paragraph();
+            $description = Meta::get($this->id, $parent_prefix.'content') ?: Fallback::paragraph();
 
             $items->$i = (object)[
                 'title'       => $title,

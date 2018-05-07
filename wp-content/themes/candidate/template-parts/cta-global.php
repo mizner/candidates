@@ -9,6 +9,14 @@ use HG\CandidateCore\Utils\Esc;
 if (class_exists(CTAGlobal::class)) :
     $data = new CTAGlobal();
     ?>
+    <section class="contact_cta template-part">
+        <div class="container contact_cta__container">
+            <h3><?php echo Esc::title($data->inner_title); ?></h3>
+	        <div class="contact_cta__inner">
+		        <?php get_template_part( 'template-parts/social-media' ); ?>
+            </div>
+        </div>
+    </section>
     <section class="cta-global template-part background-color__primary">
         <div class="container">
             <article class="cta-global__inner">

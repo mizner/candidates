@@ -32,6 +32,9 @@ class Enqueues
             ]
         );
 
+	    $js_menu = URI.'dist/mobileMenu.min.js';
+	    wp_register_script('menu-mobile', $js_menu, [], VERISON, true);
+
         $google_maps_key = 'AIzaSyBJ0jH-euSUoDHMTRdaky1n2VxzYH1Y6qc';
         $js_google_maps  = '//maps.googleapis.com/maps/api/js?key='.$google_maps_key;
         wp_register_script('google-maps', $js_google_maps, [], null, true);
@@ -55,6 +58,7 @@ class Enqueues
     public function footer()
     {
         wp_enqueue_script('global');
+        // wp_enqueue_script('menu-mobile');
     }
 
     public function asyncScripts($url)

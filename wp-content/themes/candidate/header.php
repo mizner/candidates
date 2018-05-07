@@ -28,6 +28,9 @@ if (class_exists(Header::class)) :
                 </a>
             </div>
             <div class="site-header__secondary">
+	            <div class="main-header-menu">
+		            <?php get_template_part('template-parts/navigation-primary'); ?>
+                </div>
                 <div class="site-header__buttons">
                     <a href="<?php echo esc_url($data->buttons[0]->url); ?>">
                         <button class="site-header__button button button__primary button__primary__ghosty"
@@ -44,7 +47,6 @@ if (class_exists(Header::class)) :
                         </button>
                     </a>
                 </div>
-	            <?php get_template_part('template-parts/navigation-primary'); ?>
             </div>
         </div>
     </header><!-- #siteHeader -->

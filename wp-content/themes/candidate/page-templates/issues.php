@@ -32,6 +32,8 @@ get_template_part('template-parts/page-header');
                 endif;
                 ?>
             </div>
+            <div class="image__inner">
+            </div>
         </div>
     </section>
 <?php

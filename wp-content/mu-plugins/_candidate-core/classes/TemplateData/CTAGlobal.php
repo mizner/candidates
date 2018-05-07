@@ -18,12 +18,15 @@ class CTAGlobal
 
     public $buttons;
 
+    public $inner_title;
+
     public function __construct()
     {
         $this->title = get_option(self::$prefix.'cta_title') ?: Fallback::title();
         $this->description = get_option(self::$prefix.'cta_description') ?: Fallback::paragraph();
         $this->button(self::$prefix.'button_one', 'Volunteer', get_home_url().'/volunteer');
         $this->button(self::$prefix.'button_two', 'Donate', get_home_url().'/donate');
+	    $this->inner_title = get_option(self::$prefix .'contact_cta_title') ?: Fallback::title();
     }
 
     public function button($key = '', $default_title = '', $default_url = '#')

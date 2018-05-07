@@ -46,6 +46,8 @@ add_action('plugins_loaded', function () {
     ACF\FieldGroups\About::init();
     ACF\FieldGroups\CTAGlobal::init();
     ACF\FieldGroups\SocialMedia::init();
+	ACF\FieldGroups\PageBackgroundOptions::init();
+	ACF\FieldGroups\PageSingleBackgroundOptions::init();
 
     InsertPost\Page\FrontPage::init();
     InsertPost\Page\Volunteer::init();
@@ -55,6 +57,7 @@ add_action('plugins_loaded', function () {
 
     InlineStyles\Colors::init();
     InlineStyles\GoogleFonts::init();
+	InlineStyles\Page\BackgroundOptions::init();
 
     Metabox\DisableSort::init();
     Metabox\Remove\FeaturedImage::init();

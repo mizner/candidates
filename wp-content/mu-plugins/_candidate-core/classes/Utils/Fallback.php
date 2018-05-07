@@ -17,6 +17,6 @@ class Fallback
 
     public static function image($size = '1920x700')
     {
-        return 'https://via.placeholder.com/'.$size.'/555555/ffffff';;
+        return 'https://via.placeholder.com/'.$size.'/555555/ffffff';
     }
 }

@@ -52,6 +52,10 @@ class Colors
             .background-color__secondary {
                 background-color: <?php echo esc_attr($color_secondary); ?>;
             }
+
+            .page #wrapper {
+                background-color: #777777;
+            }
         </style>
         <?php
         return ob_get_clean();

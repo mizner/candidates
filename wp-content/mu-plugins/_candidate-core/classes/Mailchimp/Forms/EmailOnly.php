@@ -6,7 +6,7 @@ class EmailOnly
 {
     public static function render($title = null, $buttonText = 'Join', $actionUri = null)
     {
-        $actionUri = $actionUri ?: 'https://miznerism.us9.list-manage.com/subscribe/post?u=8d0ace3dd99aad20424f2847b&amp;id=ebe571d749';
+        $actionUri = get_option('site_globals_mailchimp_action_url') ?: 'https://miznerism.us9.list-manage.com/subscribe/post?u=8d0ace3dd99aad20424f2847b&amp;id=ebe571d749';
         ob_start();
         ?>
         <div id="mc_embed_signup">

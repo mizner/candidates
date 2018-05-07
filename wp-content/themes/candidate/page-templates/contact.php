@@ -8,9 +8,9 @@ get_template_part('template-parts/page-header');
 while (have_posts()) :
     the_post();
     ?>
-    <section class="contact main_template">
-        <div class="container">
-            <article class="page__inner box-shadow">
+    <section class="page__inner box-shadow">
+        <div class="container volunteer__container">
+            <article class="content__inner">
                 <?php the_content(); ?>
             </article>
         </div>

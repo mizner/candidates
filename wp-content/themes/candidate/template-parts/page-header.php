@@ -8,7 +8,6 @@
     <div class="container">
         <div class="page-header__inner">
             <h1><?php the_title(); ?></h1>
-            <hr class="pageHR">
         </div>
     </div>
 </header>

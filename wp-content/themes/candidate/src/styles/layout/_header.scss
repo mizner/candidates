@@ -8,10 +8,14 @@
 
   .container {
     @include flexbox-base;
+    max-width: 1300px;
   }
 
   #{$self}__primary {
     @include for-tablet-portrait-up {
+      max-width: 35%;
+    }
+    @include for-tablet-landscape-up {
       max-width: 25%;
     }
   }
@@ -20,7 +24,15 @@
     @include flexbox-base;
     @include for-tablet-portrait-up {
       justify-content: flex-end;
+      max-width: 65%;
+      align-items: center;
+    }
+    @include for-tablet-landscape-up {
+      flex-flow: row;
       max-width: 75%;
+      .main-header-menu {
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -61,6 +73,7 @@
     align-items: center;
     @include for-tablet-portrait-up {
       justify-content: flex-end;
+      max-width: 350px;
     }
     #{$self}__button {
       margin-left: .5em;
@@ -70,8 +83,8 @@
         margin-right: 0;
       }
       &.button__primary {
-        @include for-phone-only {
-          @include screen-reader-text;
+        @include for-tablet-portrait-up {
+          //@include screen-reader-text;
         }
       }
     }
@@ -98,17 +111,49 @@
   }
 }
 
+@media screen and (max-width: 599px) {
+
+  .site-header__secondary {
+    button.site-header__button.button.button__red {
+      width: 300px;
+      order: 1;
+    }
+    button.button__primary__ghosty {
+      width: 300px;
+      order: 1;
+      margin-bottom: 15px;
+    }
+    .main-header-menu {
+      text-align: center;
+      margin-bottom: 15px;
+      order: 2;
+      button#menuMobileButton, nav#menuPrimary {
+        width: 300px;
+        margin: 0 auto;
+      }
+      button#menuMobileButton {
+        background: transparent;
+        border-color: transparent;
+        svg#Layer_1 {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
 header.background-color__primary,
 header.background-color__secondary {
 
   a {
     color: white;
     transition: all 400ms;
+  }
 
+  li.menu-item a {
     &:hover {
       opacity: .7;
     }
-
   }
 
   button.button__primary__ghosty {

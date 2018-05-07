@@ -1,29 +1,29 @@
 button#menuMobileButton {
   margin-top: 15px;
-  //background: white;
-  //border-color: white;
-  //color: $brand__blue;
+
   @include for-tablet-portrait-up {
     display: none;
   }
+
 }
 
 #menuPrimary {
+
   @media screen and (max-width: 599px) {
-    //display: none;
     transition: height ease-in-out 500ms;
     height: 0;
     overflow: hidden;
   }
+
 }
 
 #menuPrimary[aria-expanded="true"] {
-  //display: none;
-  //transition: all 400ms;
   height: auto;
 }
+
 @media screen and (max-width: 599px) {
-nav#menuPrimary {
+
+  nav#menuPrimary {
     background: $brand__blue;
     border: 1px solid white;
     visibility: hidden;
@@ -47,4 +47,3 @@ nav#menuPrimary {
   }
 
 }
-

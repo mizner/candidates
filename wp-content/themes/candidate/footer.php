@@ -14,6 +14,7 @@ $data = new Footer();
             <p class="site-footer__copyright">
                 <?php echo Esc::WYSIWYG($data->copyright); ?>
             </p>
+            <p>Site by The Herron Group</p>
         </div>
     </footer><!-- #siteFooter -->
 <?php

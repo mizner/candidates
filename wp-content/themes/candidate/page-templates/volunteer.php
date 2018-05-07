@@ -11,11 +11,7 @@ get_header();
 if (class_exists(Volunteer::class)) :
     $data = new Volunteer();
     ?>
-    <section class="volunteer background-color__primary"
-             style="background-image: url('<?php echo esc_url($data->background_image); ?>');
-                     background-size: cover;
-                     background-position: top center;
-                     background-attachment: fixed;">
+    <section class="volunteer">
         <header class="page-header template-part">
             <div class="container">
                 <div class="page-header__inner">

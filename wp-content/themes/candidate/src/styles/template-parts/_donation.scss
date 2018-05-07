@@ -8,31 +8,42 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
     @include for-tablet-landscape-up {
       justify-content: center;
       padding: 0;
     }
+
     h3 {
       //text-align: left;
       margin-bottom: 10px;
+
       @include for-tablet-portrait-up {
         margin-top: 0;
       }
+
     }
+
     p {
       margin-top: 0;
+
       @include for-tablet-landscape-up {
         font-size: .7em;
       }
+
     }
+
     > * {
       flex: 1 100%;
       max-width: 100%;
+
       @include for-tablet-landscape-up {
         flex: 1 50%;
         max-width: 50%;
       }
+
     }
+
   }
 
   h3 {
@@ -44,15 +55,20 @@
   }
 
   #{$base}__primary {
+
     h3, p {
       text-align: center;
+
       @include for-tablet-landscape-up {
         text-align: left;
       }
+
     }
+
   }
 
   #{$base}__secondary {
     text-align: center;
   }
+
 }

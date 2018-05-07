@@ -1,27 +1,34 @@
 .page {
   $base: &;
+
   #{$base}__inner {
     padding: 2em;
     max-width: 500px;
     margin: auto auto 2em;
     background: white;
+
     @include for-phone-only {
       max-width: 325px;
     }
+
     @include for-tablet-landscape-up {
       padding: 2em 3em;
       max-width: 900px;
     }
+
   }
+
 }
 
 .wpforms-field-container {
+
   input, textarea {
     border: 1px solid #ABB0B2;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
+
 }
 
 div.wpforms-container-full .wpforms-form button[type=submit] {

@@ -12,28 +12,36 @@
   }
 
   #{$self}__primary {
+
     @include for-tablet-portrait-up {
       max-width: 35%;
     }
+
     @include for-tablet-landscape-up {
       max-width: 25%;
     }
+
   }
 
   #{$self}__secondary {
     @include flexbox-base;
+
     @include for-tablet-portrait-up {
       justify-content: flex-end;
       max-width: 65%;
       align-items: center;
     }
+
     @include for-tablet-landscape-up {
       flex-flow: row;
       max-width: 75%;
+
       .main-header-menu {
         margin-bottom: 15px;
       }
+
     }
+
   }
 
   a {
@@ -46,11 +54,12 @@
     margin: 10px auto 25px;
     height: $height;
     line-height: $height;
+
     @include for-tablet-portrait-up {
       margin: 0;
       text-align: left;
-      //max-width: 200px;
     }
+
     img {
       height: 100%;
       display: inline-block;
@@ -59,6 +68,7 @@
       max-width: 300px;
       width: 100%;
     }
+
   }
 
   #{$self}__logo-text {
@@ -71,75 +81,104 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     @include for-tablet-portrait-up {
       justify-content: flex-end;
       max-width: 350px;
     }
+
     #{$self}__button {
       margin-left: .5em;
       margin-right: .5em;
+
       @include for-tablet-portrait-up {
         margin-left: 1em;
         margin-right: 0;
       }
+
       &.button__primary {
+
         @include for-tablet-portrait-up {
           //@include screen-reader-text;
         }
+
       }
+
     }
+
   }
+
   #{$self}__navigation {
+
     ul {
       display: flex;
       flex-wrap: wrap;
+
       @include for-tablet-portrait-up {
         justify-content: flex-end;
         margin-bottom: 0;
       }
+
       li {
+
         @include for-phone-only {
           flex: 1 100%;
         }
+
         display: inline-block;
+
         @include for-tablet-portrait-up {
           flex: initial;
           text-align: right;
         }
+
       }
+
     }
+
   }
+
 }
 
 @media screen and (max-width: 599px) {
 
   .site-header__secondary {
+
     button.site-header__button.button.button__red {
       width: 300px;
       order: 1;
     }
+
     button.button__primary__ghosty {
       width: 300px;
       order: 1;
       margin-bottom: 15px;
     }
+
     .main-header-menu {
       text-align: center;
       margin-bottom: 15px;
       order: 2;
+
       button#menuMobileButton, nav#menuPrimary {
         width: 300px;
         margin: 0 auto;
       }
+
       button#menuMobileButton {
         background: transparent;
         border-color: transparent;
+
         svg#Layer_1 {
           fill: white;
         }
+
       }
+
     }
+
   }
+
 }
 
 header.background-color__primary,
@@ -151,9 +190,11 @@ header.background-color__secondary {
   }
 
   li.menu-item a {
+
     &:hover {
       opacity: .7;
     }
+
   }
 
   button.button__primary__ghosty {

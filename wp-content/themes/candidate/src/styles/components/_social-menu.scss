@@ -1,4 +1,5 @@
 .menu-social li a {
+
   &:before {
     display: inline-block;
     padding: 0 5px;
@@ -100,4 +101,5 @@
   [href*="subscribe"]::before {
     content: '\f410';
   }
+
 }

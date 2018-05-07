@@ -50,13 +50,6 @@ class Issues
     private function fields()
     {
         return [
-	        // Issues Content Image
-	        [
-		        'label' => 'Content Image',
-		        'key'   => 'issues_content_image',
-		        'name'  => 'issues_content_image',
-		        'type'  => 'image',
-	        ],
             [
                 'label'      => 'Items',
                 'key'        => 'issues_items',

@@ -50,13 +50,6 @@ class About
     private function fields()
     {
         return [
-	        // About Content Image
-	        [
-		        'label' => 'Content Image',
-		        'key'   => 'about_content_image',
-		        'name'  => 'about_content_image',
-		        'type'  => 'image',
-	        ],
             [
                 'label'        => 'Bio',
                 'key'          => 'about_bio',

@@ -23,7 +23,7 @@ if (class_exists(Volunteer::class)) :
         <div class="container volunteer__container">
             <article class="page__inner">
                 <h3><?php echo Esc::title($data->subtitle); ?></h3>
-				<?php echo Esc::WYSIWYG($data->description); ?>
+				<p><?php echo Esc::WYSIWYG($data->description); ?></p>
             </article>
             <div class="content__inner mailchimp-form">
                 <div class="mailchimp-form__inner">
